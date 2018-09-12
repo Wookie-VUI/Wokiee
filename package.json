@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron": "^3.0.2",
-    "speech-to-text": "^0.7.4"
+    "electron": "^3.0.2"
   }
 }
