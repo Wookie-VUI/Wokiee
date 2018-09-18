@@ -1,11 +1,12 @@
 # Wokiee
 Voice User Coding Interface
 
+# Speech to Text (STT) with PocketSphinx
+
+To get started, use the [CMUSphinx tutorial](https://cmusphinx.github.io/wiki/tutorialadapt/)
 
 # Useful comands and tools for work with sound (sox, pocketsphinx training, etc.)
-```
-https://cmusphinx.github.io/wiki/tutorialadapt/
-
+```sh
 # compilation
 gcc -o kift kift2.c get_hyp.c -DMODELDIR=\"`pkg-config --variable=modeldir pocketsphinx`\" \
     `pkg-config --cflags --libs pocketsphinx sphinxbase`
