@@ -1,12 +1,18 @@
 # Wokiee
 ## Voice User Coding Interface
 
-### Speech to Text (STT) with PocketSphinx
 
 ### Dataset for Adaptation
 Based on `cmu_us_rms_arctic`
 
+
+### How to push large files (models) to git
+[https://github.com/git-lfs/git-lfs/wiki/Installation](https://github.com/git-lfs/git-lfs/wiki/Installation)
+
+
+### Starting with CMUSphinx and Speech to Text (STT) with PocketSphinx
 To get started, use the [CMUSphinx tutorial](https://cmusphinx.github.io/wiki/tutorialadapt/)
+
 
 ### Useful comands and tools for work with sound (sox, pocketsphinx training, etc.)
 ```sh
