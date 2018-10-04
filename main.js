@@ -1,9 +1,17 @@
-const {app, BrowserWindow} = require('electron')
+const {
+  app,
+  BrowserWindow
+} = require('electron')
 
 let mainWindow
 
-function createWindow () {
-  mainWindow = new BrowserWindow({width: 800, height: 600})
+function createWindow() {
+  // mainWindow = new BrowserWindow({width: 800, height: 600})
+  // mainWindow = new BrowserWindow({width: 1444, height: 850})
+  mainWindow = new BrowserWindow({
+    width: 722,
+    height: 850
+  })
 
   mainWindow.loadFile('src/gui/index.html')
   // Open the DevTools.
@@ -16,6 +24,7 @@ function createWindow () {
 }
 
 app.on('ready', createWindow)
+// app.on('ready', () => {})
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
@@ -31,4 +40,6 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
-const { ipcMain } = require('./src/sys')
+const {
+  ipcMain
+} = require('./src/sys')
