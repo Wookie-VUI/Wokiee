@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Node.js dependencies
+node_modules/*
+
+# Google Cloud Credentials
+src/sys/*.json
