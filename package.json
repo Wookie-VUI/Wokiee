@@ -1,17 +1,21 @@
 {
   "name": "wookie",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "GOOGLE_APPLICATION_CREDENTIALS='env/Wookie-e445281477de.json' electron ."
   },
   "keywords": [],
   "author": "Cu7ious",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/speech": "2.1.1",
     "electron": "^3.0.2",
-    "@google-cloud/speech": "2.1.1"
+    "grpc": "^1.15.1",
+    "mic": "^2.1.2",
+    "node-record-lpcm16": "^0.3.1",
+    "player": "^0.6.1"
   },
   "engines": {
     "node": ">= v10.9.0",
