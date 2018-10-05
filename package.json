@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "GOOGLE_APPLICATION_CREDENTIALS='env/Wookie-24ff0bfbefcb.json' electron ."
+    "start": "GOOGLE_APPLICATION_CREDENTIALS='env/Wookie-e445281477de.json' electron ."
   },
   "keywords": [],
   "author": "Cu7ious",
@@ -14,7 +14,8 @@
     "electron": "^3.0.2",
     "grpc": "^1.15.1",
     "mic": "^2.1.2",
-    "node-record-lpcm16": "^0.3.1"
+    "node-record-lpcm16": "^0.3.1",
+    "player": "^0.6.1"
   },
   "engines": {
     "node": ">= v10.9.0",

@@ -1,5 +1,5 @@
 let pieces, radius, fft, audio, uploadedAudio;
-const colorPalette = ["#0f0639", "#ff006a", "#ff4f00", "#00f9d9"];
+const colorPalette = ["#e1ebf7", "#2a86dd", "#96c2f7","#00f9d9"];
 let uploadLoading = true;
 let uploadAnim;
 
@@ -95,7 +95,7 @@ function draw () {
     strokeWeight(1);
     stroke(colorPalette[1]);
     scale(scalebass);
-    rotate(frameCount * -0.5);
+    rotate(frameCount * -0.1);
     line(mapbass, radius / 2, radius, radius);
     line(-mapbass, -radius / 2, radius, radius);
     pop();
@@ -113,6 +113,7 @@ function draw () {
     push();
     stroke(colorPalette[3]);
     scale(scaleTreble);
+    rotate(frameCount * 0.1);
     line(mapTreble, radius / 2, radius, radius);
     pop();
   }

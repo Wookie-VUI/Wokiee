@@ -10,6 +10,8 @@ const speech = require('@google-cloud/speech');
 
 function gStreamer() {
   const client = new speech.SpeechClient();
+  song = 'flume-insane-feat-moon-holiday.mp3';
+  
 
   const request = {
     config: {
@@ -37,7 +39,7 @@ function gStreamer() {
 
       if (recognizedText.search('music') > 0) {
         // play music
-        exec('open .', function(err, stdout) {
+        exec('play song', function(err, stdout) {
           if (err) {
             console.log(err);
           }
@@ -45,6 +47,20 @@ function gStreamer() {
       } else if (recognizedText.search('google') > 0) {
         // search google
         exec('open http://google.com', function (err, stdout) {
+          if (err) {
+            console.log(err);
+          }
+        })
+      } else if (recognizedText.search('slack') > 0) {
+        // open slack
+        exec('open https://holberton-students.slack.com', function (err, stdout) {
+          if (err) {
+            console.log(err);
+          }
+        })
+      } else if (recognizedText.search('sublime') > 0) {
+        // open Sublime
+        exec('open -a "Sublime Text"', function (err, stdout) {
           if (err) {
             console.log(err);
           }

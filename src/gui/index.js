@@ -8,9 +8,9 @@ window.onload = () => {
       console.log(err);
     }
 
-    // const user = stdout // Will be equal to unix username
+    const user = stdout // Will be equal to unix username
     // for demo purpose
-    const user = "Sergio"
+    // const user = "Sergio"
 
     require('./assets/scripts/ours/record');
 
